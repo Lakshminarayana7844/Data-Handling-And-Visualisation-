@@ -1,0 +1,5 @@
+v <- c(15000,18000,22000,20000,23000)
+png(file = "Q1.jpg")
+plot(v,type = "o")
+title(main = "Line Plot")
+dev.off()

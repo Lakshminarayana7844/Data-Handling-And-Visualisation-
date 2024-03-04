@@ -1,0 +1,6 @@
+v <- c(15000, 18000, 22000, 20000, 23000)
+labels <- c("jan", "feb", "mar", "apr", "may")
+png(file = "Q2.jpg")
+barplot(v, names.arg = labels, xlab = "Months", ylab = "Sales", width = 0.5,col ="blue")
+title(main = "Bar Plot")
+dev.off()
