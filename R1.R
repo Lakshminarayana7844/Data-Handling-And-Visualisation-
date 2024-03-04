@@ -1,5 +1,5 @@
 X <- c(20, 65, 15, 50)
-labels <- c("India", "America", "Sri Lanka", "Nepal")
-
-# Create the pie chart and print it
-print(pie(X, labels))
+labels <- c("India", "America", "Shri Lanka", "Nepal")
+png(file = "ab.png")
+pie(X, labels)
+dev.off()
