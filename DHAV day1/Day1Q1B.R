@@ -1,6 +1,13 @@
 v <- c(15000, 18000, 22000, 20000, 23000)
-labels <- c("jan", "feb", "mar", "apr", "may")
-png(file = "Q2.jpg")
-barplot(v, names.arg = labels, xlab = "Months", ylab = "Sales", width = 0.5,col ="blue")
-title(main = "Bar Plot")
+months <- c("Jan", "Feb", "Mar", "Apr", "May")
+
+x_values <- 1:length(v)
+
+png(file = "Q1.jpg")
+
+plot(x_values, v, type = "o", xlab = "Months", ylab = "Sales", main = "Line Plot", xaxt = "n")
+axis(side = 1, at = x_values, labels = months)
+
+title(main = "Line Plot")
+
 dev.off()
