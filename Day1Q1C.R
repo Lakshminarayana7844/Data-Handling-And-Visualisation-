@@ -1,5 +1,0 @@
-advertising_budget <- c(10000, 15000, 20000, 25000, 30000)
-monthly_sales <- c(5000, 6000, 8000, 9000, 10000)
-png(file = "Q3.jpg")
-plot(advertising_budget, monthly_sales,xlab = "Advertising Budget",ylab = "Monthly Sales",main = "Relationship between Advertising Budget and Monthly Sales",col = "blue")
-dev.off()
