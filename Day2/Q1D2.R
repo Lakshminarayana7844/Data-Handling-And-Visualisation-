@@ -1,0 +1,5 @@
+v<-c(250,180,300,200)
+labels<-c("North","South","East","West")
+png(file="Q1D2.jpg")
+barplot(v,names.arg=labels,xlab="Regions",ylab="Sales",main="Sales of a company in different regions",col="blue")
+dev.off()

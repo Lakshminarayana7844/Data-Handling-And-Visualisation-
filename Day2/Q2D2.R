@@ -1,0 +1,6 @@
+v<-c(30,25,20,25)
+labels<-c("Rent","Groceries","utilities","Entertainment")
+png(file="D2Q2.jpg")
+colors<-c("blue","white","yellow","black")
+pie(v,labels,main="the distribution of expenses in a household budget",col=colors)
+dev.off()
