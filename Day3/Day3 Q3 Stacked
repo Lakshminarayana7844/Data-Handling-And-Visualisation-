@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+# Sample data as a dictionary (same as above)
+
+# Create the chart
+fig, ax = plt.subplots()
+index = range(len(data["Category"]))
+
+# Create stacked bars
+plt.bar(index, data["Sales 2022"], label="2022")
+plt.bar(index, data["Sales 2023"], bottom=data["Sales 2022"], label="2023")
+
+plt.xlabel("Product Category")
+plt.ylabel("Sales")
+plt.title("Sales Performance by Product Category (Stacked)")
+plt.xticks(index, data["Category"])
+plt.legend()
+plt.show()
