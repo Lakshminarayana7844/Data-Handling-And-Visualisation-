@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Data
+product = ["mobile", "watch", "tv", "laptop", "fridge", "ac"]
+rating = [4.5, 4, 4, 3, 3, 2]
+
+# Plot
+plt.figure(figsize=(8, 6))
+plt.plot(product, rating, 'ko')
+plt.xticks(rotation=45)
+plt.ylabel('Rating')
+plt.xlabel('Product')
+plt.title('Product Ratings')
+plt.grid(True)
+plt.show()
